@@ -7,290 +7,556 @@
 -->
 
 <html lang="en">
+
 <head>
-  <title>Wesam Ahmed Ali</title>
+    <title>Wesam Ahmed Ali</title>
     <link rel="icon" type="image/x-icon" href="images/logo2.ico">
-  <meta charset="utf-8">
-  <meta name="author" content="Wesam Ahmed Ali">
-  <meta name="description" content="Personal website of Wesam Ahmed Ali">
-  <meta name="keywords" content="MLSys, outlier detection, automl, anomaly detection, Wesam Ahmed Ali">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="author" content="Wesam Ahmed Ali">
+    <meta name="description" content="Personal website of Wesam Ahmed Ali">
+    <meta name="keywords" content="MLSys, outlier detection, automl, anomaly detection, Wesam Ahmed Ali">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
+
 <body>
 
-<style>
-  .heading {
-    word-wrap: break-word;
-    font-family: 'Oswald', sans-serif;
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
+    <style>
+        .heading {
+            word-wrap: break-word;
+            font-family: 'Oswald', sans-serif;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
 
-  .info-text {
-    margin-bottom: 10px;
-  }
+        .info-text {
+            margin-bottom: 10px;
+        }
 
-  .university-color {
-    color: #a6192e;
-  }
+        .university-color {
+            color: #a6192e;
+        }
 
-  .link-list a {
-    margin-right: 5px;
-  }
+        .link-list a {
+            margin-right: 5px;
+        }
 
-  body {
-    background-color: #e6e4dc;
-  }
+        body {
+            background-color: #e6e4dc;
+        }
 
-.j_navbar
-{
-	/* background-image:linear-gradient(90deg,#76232f,#a6192e 60%,#d6001c 80%,#d6001c) */
-    background-color: #0a3c6b;
-}
+        .j_navbar {
+            /* background-image:linear-gradient(90deg,#76232f,#a6192e 60%,#d6001c 80%,#d6001c) */
+            background-color: #0a3c6b;
+        }
 
-.justified-text {
-        text-align: justify;
-    }
+        .justified-text {
+            text-align: justify;
+        }
 
-</style>
+        /* Reset some default styles for the footer */
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Footer styles */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Social icons */
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        .social-icons li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        /* for the skills */
+
+        .containerskills {
+            width: 100%;
+            background-color: #e6e4dc;
+
+        }
+
+        .skills {
+            text-align: left;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            color: white;
+
+        }
+
+        .clock {
+            color: #a6192e;
+        }
+
+        /* .html {width: 90%; background-color: #04AA6D;}
+.css {width: 80%; background-color: #2196F3;}
+.js {width: 65%; background-color: #f44336;}
+.php {width: 90%; background-color: #808080;} */
+
+        .research1 {
+            width: 90%;
+            background-color: #a6192e;
+        }
+
+        .research2 {
+            width: 80%;
+            background-color: #a6192e;
+        }
+
+        .research3 {
+            width: 80%;
+            background-color: #a6192e;
+        }
+
+        .research4 {
+            width: 90%;
+            background-color: #a6192e;
+        }
+
+        .research5 {
+            width: 85%;
+            background-color: #a6192e;
+        }
+
+        .coding1 {
+            width: 90%;
+            background-color: #a6192e4f;
+        }
+
+        .coding2 {
+            width: 88%;
+            background-color: #a6192e4f;
+        }
+
+        .coding3 {
+            width: 15%;
+            background-color: #a6192e4f;
+        }
+
+        .skill1 {
+            width: 90%;
+            background-color: #27050a4f;
+        }
+
+        .skill2 {
+            width: 80%;
+            background-color: #27050a4f;
+        }
+
+        .skill3 {
+            width: 90%;
+            background-color: #27050a4f;
+        }
+    </style>
+
+    <!-- <li><img width="50" height="50" class="img-responsive" src="logo.png" alt="Avatar of Adeem Ali Anwar"  text-align="right"></li> -->
 
 
-<nav class="navbar navbar-inverse navbar-static-top j_navbar" role="navigation" >
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Wesam Ahmed Ali</a>
-    </div>
+    <nav class="navbar navbar-inverse navbar-static-top j_navbar" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
-    <div class="collapse navbar-collapse " id="navbar-collapse">
-      <ul class="nav navbar-nav ">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#teaching">Experience</a></li>
-        <li><a href="#awards">Honors & Awards</a></li>
-        <li><a href="#services">Services & Memberships</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+                <a class="navbar-brand" href="#">W. A. Ali</a>
+            </div>
 
+            <div class="collapse navbar-collapse " id="navbar-collapse">
+                <ul class="nav navbar-nav ">
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#teaching">Experience</a></li>
+                    <li><a href="#volunteer">Volunteer</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#awards">Honors & Awards</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Services & Memberships</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
 
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-xs-12">
-              <div class="heading">Wesam Ahmed Ali</div>
-              <div class="row">
-                <!-- <div class="col-md-10 col-xs-4">
-                  <img class="img-responsive" src="#" alt="Avatar of #">
-                </div> -->
-              </div>
-              <div class="info-text">
-                <i>Ph.D. Candidate</i><br>
-                Department of Chemistry<br>
-                <p class="university-color">Khalifa University</p>
-                Abu Dhabi, UAE<br>
-                <b>Email</b>: <a href="mailto:saya444@live.com">saya444@live.com</a><br>
-              </div>
-              <div class="link-list">
-                <a href="https://scholar.google.com.au/citations?user=qzyVIWMAAAAJ&hl=en&oi=ao">Google Scholar</a> |
-                <a href="#"> Twitter</a> |
-                <a href="#"> LinkedIn</a> 
-              </div>
-              <br>
+                <div class="heading">Wesam Ahmed Ali</div>
+                <div class="row">
+                    <!-- <div class="col-md-10 col-xs-4">
+            <img id="myImage" class="img-responsive" src="adeem.jpg" alt="Avatar of Wesam Ahmed Ali"
+              onclick="changeImage()">
+          </div> -->
+                </div>
+                <div class="info-text">
+                    <i>Ph.D. Candidate</i><br>
+                    Department of Chemistry<br>
+                    <p class="university-color">Khalifa University</p>
+                    Abu Dhabi, UAE<br>
+                    <b>Email</b>: <a href="mailto:saya444@live.com">saya444@live.com</a><br>
+                </div>
+                <div class="link-list">
+                    <a href="https://scholar.google.com.au/citations?user=qzyVIWMAAAAJ&hl=en&oi=ao">Google Scholar</a> |
+                    <a href="#"> Twitter</a> |
+                    <a href="#"> LinkedIn</a>
+                </div>
+                <br>
+                <div class="link-list">
+                    <i class="fa fa-globe" style="font-size:20px;color:#a6192e"></i>
+                    <a href="https://u.ae/en"> UAE</a> |
+                    <a href="https://www.visitegypt.gov.eg/"> Egypt</a>
+                </div>
+                <br>
+                <div class="link-list">
+                    <i class="fa fa-language" style="font-size:20px;color:#a6192e"></i>
+                    <a href="https://en.wikipedia.org/wiki/English_language">English</a>|
+                    <a href="https://en.wikipedia.org/wiki/Arabic"> Arabic</a>|
+                    <a href="https://en.wikipedia.org/wiki/Spanish_language"> Spanish</a>
+                </div>
+                <br>
 
-              <div class="link-list">
-                <i class="fa fa-globe" style="font-size:20px;color:#a6192e"></i>
-                <a href="https://u.ae/en"> UAE</a> |
-                <a href="https://www.visitegypt.gov.eg/"> Egypt</a>
-              </div>
+                <div class="link-list">
+                    Catalysis
+                    <div class="containerskills">
+                        <div class="skills research1"></div>
+                    </div>
+
+                    Green Chemistry
+                    <div class="containerskills">
+                        <div class="skills research2"></div>
+                    </div>
+
+                    Nanotechnology
+                    <div class="containerskills">
+                        <div class="skills research3"></div>
+                    </div>
+
+                    Chemometrics
+                    <div class="containerskills">
+                        <div class="skills research4"></div>
+                    </div>
+
+                    Inorganic Chemistry
+                    <div class="containerskills">
+                        <div class="skills research5"></div>
+                    </div>
+
+                    Arabic
+                    <div class="containerskills">
+                        <div class="skills coding1"></div>
+                    </div>
+
+                    English
+                    <div class="containerskills">
+                        <div class="skills coding2"></div>
+                    </div>
+
+                    Spanish
+                    <div class="containerskills">
+                        <div class="skills coding3"></div>
+                    </div>
+
+
+                    Communication Skills
+                    <div class="containerskills">
+                        <div class="skills skill1"></div>
+                    </div>
+
+                    Organization and Time Management
+                    <div class="containerskills">
+                        <div class="skills skill2"></div>
+                    </div>
+
+                    Analytical and Problem Solving
+                    <div class="containerskills">
+                        <div class="skills skill3"></div>
+                    </div>
+                </div>
+                <br>
+
+
+                <div class="info-text">
+                    <i class="university-color">#Publications:</i>
+                    5<br>
+                    <i class="university-color">#Citations:</i>
+                    15<br>
+                    <!-- <i class="university-color">#Research Work/Projects:</i>
+                    22<br> -->
+                </div>
+
 
             </div>
-            <div class="col-md-8 col-xs-12">
+            <div class="col-md-9 col-xs-12">
                 <div class="col" style="margin-top:3%; text-align:left;">
 
-                    <p class="justified-text"><strong style="color:#a6192e";>About me</strong>
-                      I am a researcher, scientist and an academician. Currently, a Ph.D. student at Khalifa University. I have received MS degree in Chemistry from Khalifa University, UAE.
+                    <p class="justified-text"><strong style="color:#a6192e" ;>About me</strong>
+                        I am a researcher, scientist and an academician. Currently, a Ph.D. student at Khalifa
+                        University. I have received MS degree in Chemistry from Khalifa University, UAE.
 
-                    <p class="justified-text"><strong style="color:#a6192e";>Research Interests</strong>
-                    My research Interests are <strong>Catalysis, Green chemistry and nanotechnology, chemometrics</strong>.
-                    <hr>
+                    <p class="justified-text"><strong style="color:#a6192e" ;>Research Interests</strong>
+                        My research Interests are <strong>Catalysis, Green chemistry and nanotechnology,
+                            chemometrics</strong>.
+                        <hr>
 
                 </div>
 
                 <div class="col">
-                    <h2 id="publications" style="color:#a6192e";>Recent Publications</h2>
-                    <p>See my <a href="https://scholar.google.com.au/citations?user=qzyVIWMAAAAJ&hl=en&oi=ao">Google Scholar</a>,
-          
-                    <a href="#">ORCID</a>,
-                    and <a href="https://www.researchgate.net/profile/Wesam-A-Ali">ResearchGate</a> for the complete publication list.
+                    <h2 id="publications" style="color:#a6192e" ;>Recent Publications</h2>
+                    <p>See my <a href="https://scholar.google.com.au/citations?user=qzyVIWMAAAAJ&hl=en&oi=ao">Google
+                            Scholar</a>,
+                        <a href="#">Scopus</a>,
+                        <a href="#">ORCID</a>,
+                        and <a href="https://www.researchgate.net/profile/Wesam-A-Ali">ResearchGate</a> for the complete
+                        publication
+                        list.
                     </p>
 
                     <hr>
 
-
-
-
                     <h4 id="journal-papers">Journal/Conference Papers</h4>
                     <ul class="vert">
-                    <li>
-                        <strong><a href="https://www.sciencedirect.com/science/article/abs/pii/B9780323952538000103"> Recent advances in quantification and remediation technologies for toxic PAH mitigation from the environment</a></strong>. <br>
-                        Bhausaheb Dhokale PhD, Zeinab M. Saeed MSc, <strong>Wesam A. Ali MSc</strong>, Sharmarke Mohamed PhD <br>
-                        <i>Advances in Nano and Biochemistry</i>, 2023.
-                    </li>
+                        <li>
+                            <strong><a
+                                    href="https://www.sciencedirect.com/science/article/abs/pii/B9780323952538000103">
+                                    Recent advances in quantification and remediation technologies for toxic PAH
+                                    mitigation from the environment</a></strong>. <br>
+                            Bhausaheb Dhokale PhD, Zeinab M. Saeed MSc, <strong>Wesam A. Ali MSc</strong>, Sharmarke
+                            Mohamed PhD <br>
+                            <i>Advances in Nano and Biochemistry</i>, 2023.
+                        </li>
 
-                    <li>
-                      <strong><a href="https://pubs.acs.org/doi/full/10.1021/acs.cgd.2c00344">Unravelling the Origin of Solvate Formation in the Anticancer Drug Trametinib: Insights from Crystal Structure Analysis and Computational Modeling</a></strong>. <br>
-                      Ipsha Shruti, Mubarak Almehairbi, Zeinab M. Saeed, Tamador Alkhidir, <strong>Wesam A. Ali</strong>, Rampal Vishwakarma, Sharmarke Mohamed, Deepak Chopra <br>
-                      <i>American Chemical Society</i>, 2022.
-                    </li>
+                        <li>
+                            <strong><a href="https://pubs.acs.org/doi/full/10.1021/acs.cgd.2c00344">Unravelling the
+                                    Origin of Solvate Formation in the Anticancer Drug Trametinib: Insights from Crystal
+                                    Structure Analysis and Computational Modeling</a></strong>. <br>
+                            Ipsha Shruti, Mubarak Almehairbi, Zeinab M. Saeed, Tamador Alkhidir, <strong>Wesam A.
+                                Ali</strong>, Rampal Vishwakarma, Sharmarke Mohamed, Deepak Chopra <br>
+                            <i>American Chemical Society</i>, 2022.
+                        </li>
 
-                    <li>
-                      <strong><a href="https://iopscience.iop.org/article/10.1088/1361-6463/abfad6/meta">Morphology-dependent catalytic activity of tungsten trioxide (WO3) nanostructures for hydrogenation of furfural to furfuryl alcohol</a></strong>. <br>
-                      <strong>Wesam A. Ali</strong>, G Bharath, Pranay P Morajkar, Akshay V Salkar, Mohammad Abu Haija, Fawzi Banat
-                      <i>Journal of Physics D: Applied Physics</i>, 2021.
-                    </li>
+                        <li>
+                            <strong><a
+                                    href="https://iopscience.iop.org/article/10.1088/1361-6463/abfad6/meta">Morphology-dependent
+                                    catalytic activity of tungsten trioxide (WO3) nanostructures for hydrogenation of
+                                    furfural to furfuryl alcohol</a></strong>. <br>
+                            <strong>Wesam A. Ali</strong>, G Bharath, Pranay P Morajkar, Akshay V Salkar, Mohammad Abu
+                            Haija, Fawzi Banat<br>
+                            <i>Khalifa University (Elsevier)</i>, 2021.
+                        </li>
 
-                    <li>
-                      <strong><a href="https://doi.org/10.1371/journal.pone.0234625">Analysis of illicit glucocorticoid levels in camel hair using competitive ELISA – Comparison with LC–MS/MS</a></strong>. <br>
-                      S. Salman Ashraf, <strong>Wesam El-Gahany</strong>, Ayisha Alraeesi, Latifa Al-Hajj, Ayisha Al-Maidalli, Iltaf Shah <br>
-                      <i>Drug Testing and Analysis</i>, 2020.
-                    </li>
+                        <li>
+                            <strong><a href="https://khalifauniversity.elsevierpure.com/ws/portalfiles/portal/6813526/file">Catalytic activity of tungsten trioxide (WO3) nanostructures prepared through the hydrothermal and precipitation methods for hydrogenation of furfural to furfuryl alcohol</a></strong>. <br>
+                            <strong>Wesam Ahmed Ali</strong><br>
+                            <i>Drug Testing and Analysis</i>, 2021.
+                        </li>
+
+                        <li>
+                            <strong><a href="https://doi.org/10.1371/journal.pone.0234625">Analysis of illicit
+                                    glucocorticoid levels in camel hair using competitive ELISA – Comparison with
+                                    LC–MS/MS</a></strong>. <br>
+                            S. Salman Ashraf, <strong>Wesam El-Gahany</strong>, Ayisha Alraeesi, Latifa Al-Hajj, Ayisha
+                            Al-Maidalli, Iltaf Shah <br>
+                            <i>Drug Testing and Analysis</i>, 2020.
+                        </li>
 
                     </ul>
 
+                </div>
+                <hr>
+                <div class="col">
+                    <h2 id="teaching" style="color:#a6192e" ;>Research/ Professional Experience</h2>
+
+                    <h4>Teaching Assistant at <a href="https://www.ku.ac.ae/">Khalifa University, UAE</a>: (2019 – 2021)</h4>
+                    <ul>
+                        <li>Assist in teaching tasks</li>
+                    </ul>
+
+                    <h4>Chemistry Teacher at <a href="https://liwaschool.ae/">Liwa International School, UAE</a>: (2017 – 2018)</h4>
+                    <ul>
+                    <li>Teach Chemistry to grade 8 and 9.</li>
+                    </ul>
+
+                    <h4>Research Assistant at <a href="https://www.uaeu.ac.ae/en/">Department of Chemistry, UAEU, UAE</a>: (2016 – 2017)</h4>
+                    <ul>
+                    <li>Assist Prof. of Analytical Chemistry, Sayed Marzouk, with separating gases using different nanoparticle-membranes.</li>
+                    </ul>
+
+                    <h4>Peer Tutor at <a href="https://www.uaeu.ac.ae/en/university_college/sasp/learningcenters/speaking.shtml">Speaking Center, UAEU, UAE</a>: (2015 – 2017)</h4>
+                    <ul>
+                    <li>Help students practice their spoken English.</li>
+                    </ul>
+
+                    <h4>Trainee at <a href="https://www.slb.com/products-and-services/innovating-in-oil-and-gas/reservoir-characterization/rock-and-fluid-analysis/reservoir-laboratories/abu-dhabi-and-dubai-labs">Schlumberger, Reservoir Lab, UAE</a>: (2016)</h4>
+                    <ul>
+                    <li>General knowledge in strength testing, core and routine analysis of rocks.</li>
+                    <li>General knowledge in thin section scanning, scanning electronic microscope, and X-Ray diffraction.</li>
+                    </ul>
+
+                    <h4>Peer Tutor at <a href="https://www.uaeu.ac.ae/en/university_college/sasp/learningcenters/tutorial.shtml">Tutorial Center, UAEU, UAE</a>: (2014)</h4>
+                    <ul>
+                    <li>Tutor students in Advanced Calculus and General Chemistry.</li>
+                    </ul>
+
+                </div>
+
+                <hr>
+
+            
+                <div class="col">
+                    <h2 id="volunteer" style="color:#a6192e" ;>Volunteer Work</h2>
+
+                    <h4>Peer Leader at <a href="https://www.uaeu.ac.ae/en/university_college/sasp/">The Students’ Academic Success (SASP), UAEU, UAE:</a> (2016 – 2017)</h4>
+                    <ul>
+                    <li>Guide new students.</li>
+                    </ul>
+
+                    <h4>Volunteer at <a href="https://www.uaeu.ac.ae/en/student-services/special-needs/">Special Needs Center, UAEU, UAE:</a> (2017)</h4>
+                    <ul>
+                    <li>Help special needs students.</li>
+                    </ul>
+
+                    <h4>Volunteer at <a href="https://www.uaeu.ac.ae/en/cbe/media/photos/advising_workshop.shtml">Advising Workshop, UAEU, UAE:</a> (2016, 2017)</h4>
+                    <ul>
+                    <li>Help students choose major/courses.</li>
+                    </ul>
+
+                    <h4>Volunteer at <a href="https://www.uaeu.ac.ae/en/news/2016/february/sanid.shtml">Sanid Program, UAEU, UAE:</a> (2016)</h4>
+                    <ul>
+                    <li>Participated in the volunteer emergency response program</li>
+                    </ul>
+
+
+                </div>
+
+                <hr>
+
+
+
+                <div class="col">
+                    <h2 id="education" style="color:#a6192e" ;>Education</h2>
+                    <ul>
+                        <li>Doctor of Philosophy in Chemistry from <a
+                                href="https://www.ku.ac.ae/academics/college-of-arts-and-sciences/department/department-of-chemistry#about">
+                                Khalifa University (Department of Chemistry), Abu Dhabi, UAE</a> (2021 – Ongoing)</li>
+                        <li>M.Sc. Of Applied Chemistry from <a href="https://www.ku.ac.ae/">Khalifa University (Department of Chemistry), Abu Dhabi, UAE</a> (2019 – 2021)</li>
+                        <li>B.Sc. in Chemistry from <a href="https://www.uaeu.ac.ae/en/">United Arab Emirates University (UAEU), Al Ain, Abu Dhabi, UAE</a> (2012 – 2017)</li>
+                    </ul>
+                </div>
+
+                <hr>
+
+                <div class="col">
+                    <h2 id="awards" style="color:#a6192e" ;>Honors & Awards</h2>
+                    <ul>
+                        <li> Scholarship of master’s degree by Khalifa University (2019-2021)</li>
+                        <li> Award of excellence, College of Science, UAEU (2015, 2017)</li>
+                        <li> Dean's list (2012-2017)</li>
+                    </ul>
+                </div>
+                <hr>
+
+                <div class="col">
+                    <h2 id="skills" style="color:#a6192e" ;>Skills</h2>
+                    <h4 id="member">Lab Skills</h4>
+                    <ul>
+                        <li>ELISA</li>
+                        <li>Rotary System</li>
+                        <li>Reflux System</li>
+                        <li>IR spectrometry</li>
+                        <li>Titration</li>
+                        <li>Spectrophotometry</li>
+                        <li>Spectrofluorometer</li>
+                        <li>Flame photometry</li>
+                        <li>NMR spectrometry</li>
+                        <li>Potentiometry electro analysis</li>
+                        <li>Synthesis (Azo Dyes, Nylon, banana oil, Heterocyclic compounds, metal complexes)</li>
+                        <li>HPLC Chromatography</li>
+                        <li>Gas Chromatography</li>
+                        <li>TLC Chromatography</li>
+                        <li>Preparation of Buffers</li>
+                        <li>Characterization techniques: XRD, RAMAN, SEM, TEM, EDX, BET</li>
+                      </ul>
+                      
+                    <h4 id="member">Computing Skills</h4>
+                    <ul>
+                        <li><strong>MS Office:</strong> MS Word, MS Powerpoint, MS Excel</li>
+                        <li><strong>Operating Systems:</strong> Linux, Windows, Android, MAC</li>
+                        <li><strong>Misc.:</strong> MS Project, MS Visio, End Note</li>
+                    </ul>
+                </div>
+
+                <hr>
+                <div class="col">
+                    <h2 id="services" style="color:#a6192e" ;>Services & Memberships</h2>
+                    <h4 id="member">Clubs' Membership</h4>
+                    <ul>
+                        <li>Member of the Anime Club, UAEU, UAE</a> (2015 – 2017)</li>
+                    </ul>
+                    <ul>    
+                        <li>Member of the Chemistry Club, UAEU, UAE</a> (2015 – 2017)</li>
+                    </ul>
+                    <ul>
+                        <li>Member of the Reading Club, UAEU, UAE</a> (2016)</li>
+                    </ul>
+                </div>
+                <hr>
+
             </div>
-        <hr>
-        <div class="col">
-            <h2 id="teaching" style="color:#a6192e";>Research/ Professional Experience</h2>
-            TBA
-
-            <!-- <h4>Casual Diploma Teacher at <a href="https://www.mq.edu.au/study/find-a-course/pathway-programs">Macquarie University International College (MUIC), NSW, Australia</a>:</h4>
-            <ul>
-                <li>Introduction to Computer Programming (July 2023 – Current)</li>
-                <li>Fundamentals of Computer Science (Dec 2022 – Current)</li>
-            </ul>
-
-            <h4>Sessional Academics at <a href="https://www.mq.edu.au/faculty-of-science-and-engineering/departments-and-schools/school-of-computing">Macquarie University (School of Computing), NSW, Australia</a>:</h4>
-            <ul>
-                <li>Fundamentals of Computer Science (July 2022 – Current)</li>
-            </ul>
-
-            <h4>Casual Research Assistant at <a href="https://www.mq.edu.au/faculty-of-science-and-engineering/departments-and-schools/school-of-computing">Macquarie University (School of Computing), NSW, Australia</a>:</h4>
-            <ul>
-                <li>Evolutionary Computations (April 2023 – Current)</li>
-            </ul>
-
-            <h4>Exam Supervisor at <a href="https://www.mq.edu.au/faculty-of-science-and-engineering/departments-and-schools/school-of-computing">Macquarie University (School of Computing), NSW, Australia</a>:</h4>
-            <ul>
-                <li>Zoom/ On campus invigilation (Nov 2022 – Current)</li>
-            </ul>
-
-            <h4>Visiting Lecturer at <a href="https://lhr.nu.edu.pk/">National University of Computer and Emerging Sciences, Pakistan</a>:</h4>
-            <ul>
-                <li>Web Programming (Aug 2018 – Dec 2018)</li>
-            </ul>
-
-            <h4>Lecturer at <a href="https://uol.edu.pk/">The University of Lahore, Pakistan (Sep 2018 – March 2022)</a>:</h4>
-            <ul>
-                <li>Introduction to Computer Programming </li>
-                <li>Programming Fundamentals</li>
-                <li>Data Structures and Algorithms </li>
-                <li>Design and analysis of algorithms </li>
-                <li>Object Oriented Programming</li> 
-            </ul>
-
-            <h4>Lecturer at <a href="https://leads.edu.pk/">Lahore Leads University, Lahore, Pakistan (Feb 2018 – Sep 2018)</a>:</h4>
-            <ul>
-              <li>Introduction to Computer Programming</li>
-              <li>Programming Fundamentals</li>
-              <li>Data Structures and Algorithms</li>
-              <li>Design and analysis of algorithms</li>
-              <li>Object Oriented Programming</li> 
-            </ul>
-
-            <h4>Teaching Assistant at <a href="https://lhr.nu.edu.pk/">National University of Computer and Emerging Sciences, Pakistan</a>:</h4>
-            <ul>
-                <li>Programming Fundamentals</li>
-                <li>Object Oriented Programming</li>
-                <li>Computer Organization and Assembly Language</li>
-            </ul>
-
-            <h4>Research Student at <a href="https://lhr.nu.edu.pk/">National University of Computer and Emerging Sciences, Pakistan</a>:</h4>
-            <ul>
-                <li>Evolutionary Computations (Aug 2015 – Jan 2018)</li>
-            </ul> -->
-
-        </div>
-
-        <hr>
-
-        <div class="col">
-            <h2 id="awards" style="color:#a6192e";>Honors & Awards</h2>
-            <br>
-            TBA
-            <!-- <ul>
-            <li> Awarded full scholarship from Macquarie University for Ph.D</li>
-            <li> Awarded Certificate and Shield at Soft-Expo, Lahore, Pakistan in 2015, for the work in BS (Final year project)</li>
-            </ul> -->
-        </div>
-        <hr>
-
-        <div class="col">
-            <h2 id="awards" style="color:#a6192e";>Computing Skills</h2>
-            <br>
-            TBA
-            <!-- <ul>
-                <li><strong>Languages:</strong> C, C++, C#, Java, Python, LaTeX, SQL</li>
-                    <li><strong>Tool/Platforms:</strong> Android Studio, Unity 3D, Wit.AI</li>
-                        <li><strong>Web Dev:</strong> HTML, CSS, JS/jQuery, .net Framework</li>
-                            <li><strong>OS:</strong> Linux, Windows, Android, MAC</li>
-                                <li><strong>Design</strong>: Adobe Photoshop </li>
-                                    <li><strong>Others:</strong> MS Office, MS Project, MS Visio, Rational Rose, End Note</li>
-            </ul> -->
-        </div>
-
-        <hr>
-        <h2 id="services" style="color:#a6192e";>Services & Memberships</h2>
-        TBA
-        <!-- <h4 id="conference-organizing-committee">Conference Organizing Committee</h4>
-        <ul>
-        <li><a href="https://adma2024.github.io/">ADMA 2024</a></li>
-        </ul>
-        <ul>
-        <li><a href="https://sites.google.com/view/wfar/wfar-17">WFAR 2019</a></li>
-        </ul>
-        <h4 id="conference-reviewer">Conference Reviewer</h4>
-        <ul>
-        <li><a href="https://pstda2023.github.io/">DSAA</a></li>
-        </ul>
-
-        <h4 id="member">Member</h4>
-        <ul>
-        <li><a href="https://data-science-group.github.io/">Data Science Lab at Macquarie University, Australia</a></li>
-        </ul>
-        <ul>
-            <li>S2MILE at Macquarie University, Australia</a></li>
-        </ul> -->
-        
-        <hr>
-
-    </div>
         </div>
     </div>
-	
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Last Updated: 10 November 2023</p>
+            <ul class="social-icons">
+                <li><a href="https://scholar.google.com.au/citations?user=qzyVIWMAAAAJ&hl=en&oi=ao"><i
+                            class="fa fa-google"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                <br><br>
+                <div id="clock" class="clock">Clock is Loading</div>
+                <script src="clock.js"></script>
+            </ul>
+        </div>
+
+    </footer>
+
 </body>
 
 </html>
