@@ -84,7 +84,7 @@
         // Add event listener to the document for right-click event
         document.addEventListener('contextmenu', disableRightClick);
     </script>
-    
+
 </head>
 <body>
     <!-- <button class="new-page-button" onclick="goToNewPage()">Algorithm</button> -->
@@ -97,13 +97,17 @@
         <label for="voltage">Enter Voltage:</label>
         <input type="number" id="voltage" placeholder="200V to 500V"><br>
 
+        <label for="bmi">Enter BMI:</label>
+        <input type="number" id="bmi" placeholder="0 to 50.0"><br>
+
         <label for="race">Choose Race:</label>
         <select id="race">
             <option value="Asian">Asian</option>
-            <option value="Black">Black</option>
-            <option value="Hispanic">Hispanic</option>
-            <option value="White">White</option>
+            <option value="Black">African</option>
             <option value="Australoid">Australoid</option>
+            <option value="Australoid">American</option>
+            <option value="White">European</option>
+            <option value="Hispanic">Hispanic</option>
         </select><br>
 
         <button onclick="calculate()">Get Results</button><br>
@@ -129,15 +133,21 @@
             var age = parseInt(document.getElementById("age").value);
             var race = document.getElementById("race").value;
             var voltage = parseInt(document.getElementById("voltage").value);
+            var bmi = parseInt(document.getElementById("bmi").value);
             var result = ((voltage-xn)/(xn1-xn))*((yn1-yn)+yn);
             var percentage = 1;
 
             if (isNaN(age) || age < 1 || age > 100) {
-                alert("Please enter a valid age between 1 and 100.");
+                alert("Please enter a valid age between 1 and 100");
                 return;
             }
             if (isNaN(voltage) || voltage < 200 || voltage > 500) {
-                alert("Please enter a valid voltage between 200 and 500.");
+                alert("Please enter a valid voltage between 200 and 500");
+                return;
+            }
+
+            if (isNaN(bmi) || bmi < 0 || bmi > 50.0) {
+                alert("Please enter a valid BMI between 0 and 50.0");
                 return;
             }
 
@@ -148,7 +158,7 @@
             }
             
             document.getElementById("result").innerText = "Glucose Levels (20 mg/dL to 1000 mg/dL): " + result.toFixed(2);
-            document.getElementById("glucose").innerText = "Pre-diabetes turning into Diabetes: " + percentage.toFixed(2) + "%";
+            document.getElementById("glucose").innerText = "In " + percentage.toFixed(2) + " years there is chance that you will get diabetes: ";
             
         }
         
