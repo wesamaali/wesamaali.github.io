@@ -117,6 +117,21 @@
         </div>
         </div>
         <div class="algorithm">
+            <p class="algorithm-title">Convert Voltage into Glucose:</p>
+            <div class="highlight">
+                <p><span class="function-name">function</span> <span class="function-name">interpolate_glucose_level(voltage)</span> {</p>
+    
+            <div class="highlight">
+                <p class="function-description">x_min, x_max, y_min, y_max have minimum voltage, maximum voltage, minimum sugar level and maximum sugar level respectively </p>
+                <p><span class="function-name">    x_min, x_max, y_min, y_max</span> = <span class="function-name">200, 500, 20, 1000</span></p>
+                <p><span class="function-name">    glucose_level</span> = <span class="function-name">((voltage-x_min)/(x_max-x_min)) * ((y_max-y_min)+y_min)</span></p>
+                <p><span class="function-name">    return </span> <span class="function-name">glucose_level</span></p>
+            </div>
+            <p><span class="function-name">        }</span></p>
+        </div>
+        </div>
+
+        <div class="algorithm">
             <p class="algorithm-title">Send Glucose Level to AWS and User Data Collection:</p>
             <p class="function-description">Send glucose level to AWS and collect user data.</p>
             <div class="highlight">
