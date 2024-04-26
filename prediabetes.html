@@ -152,33 +152,34 @@
             }
 
             if (race == "Asian") {
-                var race1 = 10;
+                var race1 = 1;
             } else {
                 var race1 = 0;
             }
 
             var val =(bmi*0.25 + race1*0.25 + result*0.25 + age*0.25);
-            if (val < 61 )
-            {
-                percentage= 25;
-            }
-            if (val >= 61 && val < 97 )
-            {
-                percentage= 50;
-            }
-            if (val >= 97 && val < 133 )
-            {
-                 percentage= 75;
-            }
-            if (val >= 133)
-            {
-                percentage= 100;
-            }
+            // if (val < 61 )
+            // {
+            //     percentage= 25;
+            // }
+            // if (val >= 61 && val < 97 )
+            // {
+            //     percentage= 50;
+            // }
+            // if (val >= 97 && val < 133 )
+            // {
+            //      percentage= 75;
+            // }
+            // if (val >= 133)
+            // {
+            //     percentage= 100;
+            // }
+            percentage= ((val - 0) / (287.75 - 0)) * 100;
             
-            document.getElementById("result").innerText = "Glucose Levels (20 mg/dL to 1000 mg/dL): " + result.toFixed(2);
+            document.getElementById("result").innerText = "Glucose Levels (0 mg/dL to 1000 mg/dL): " + result.toFixed(2);
             // document.getElementById("glucose").innerText = "In " + percentage.toFixed(2) + " years there is chance that you will get diabetes.";
-            document.getElementById("glucose").innerText = "There is around " + percentage.toFixed(2) + "% chance that you will get diabetes.\n";
-            document.getElementById("glucose").innerText += "In " + "x years there is chance that you will get diabetes.";
+            document.getElementById("glucose").innerText = "There is around " + percentage.toFixed(2) + "% chance that you will get diabetes in coming years.";
+            // document.getElementById("glucose").innerText += "In " + "x years there is chance that you will get diabetes.";
             
         }
         
