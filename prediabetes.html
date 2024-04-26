@@ -74,9 +74,20 @@
             background-color: #0056b3;
         }
     </style>
+
+    <script>
+        // Function to disable right-click
+        function disableRightClick(event) {
+            event.preventDefault(); // Prevent the default right-click behavior
+        }
+
+        // Add event listener to the document for right-click event
+        document.addEventListener('contextmenu', disableRightClick);
+    </script>
+    
 </head>
 <body>
-    <button class="new-page-button" onclick="goToNewPage()">Algorithm</button>
+    <!-- <button class="new-page-button" onclick="goToNewPage()">Algorithm</button> -->
     <div class="container">
         <img src="image.webp" alt="Company Logo" class="logo">
         <h1>Pre-diabetes Detector</h1>
@@ -102,6 +113,11 @@
 
         <p class="note">Note: In a real-life scenario the sweat will be taken from the wearable device which will be further converted into voltage and then received here (using AWS) to make the prediction.</p>
         <p class="note">For more information: <a href="./GlucoSenseAlgorithm.html"">Read the algorithm</a></p>
+        <!-- Footer with Copyright -->
+        <footer style="text-align: center; padding: 20px; background-color: #f0f4f8; color: #666; font-size: 14px; margin-top: 20px;">
+            © 2024 Pre-diabetes Detector. All rights reserved by <a href="./index.html"">Wesam Ahmed Ali</a>
+        </footer>
+
     </div>
     
     <script>
