@@ -146,7 +146,7 @@
                 <p><span class="function-name">    if</span> validate_user_data(user_data):</p>
                 <div class="highlight">
                     <p><span class="function-name">        pre_diabetes_risk</span> = <span class="function-name">assess_pre_diabetes_risk(glucose_level, user_data)</span></p>
-                    <p><span class="function-name">        display_risk_assessment(pre_diabetes_risk)</span></p>
+                    <p><span class="function-name">        display(pre_diabetes_risk)</span></p>
                 </div>
                 <p><span class="function-name">    else:</span></p>
                 <div class="highlight">
@@ -175,7 +175,7 @@
 
         <p class="note"><b>assess_pre_diabetes_risk(glucose_level, user_data)</b> is the function where the glucose level along with user data is processed to assess the risk of pre-diabetes. This could involve a predictive model or an algorithm based on medical guidelines. (Currently the value is calculated by using this given formula: bmi*0.25 + race*0.25 + result*0.25 + age*0.25 which is then converted into percentage)</p>
 
-        <p class="note"><b>display_risk_assessment(pre_diabetes_risk)</b> shows the outcome of the risk assessment to the user through the app's interface.</p>
+        <p class="note"><b>display(pre_diabetes_risk)</b> shows the outcome of the risk assessment to the user through the app's interface.</p>
 
 
         <p class="note">Note: The functions and processes described here are intended for illustrative purposes only.</p>
