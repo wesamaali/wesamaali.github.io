@@ -78,11 +78,10 @@
                     <div class="highlight">
                         <p><span class="function-name">while</span> (<span class="function-name">true</span>) {</p>
                     </div>
-                    <p class="function-description">Collect sweat sample, calculate salt level, and measure conductivity.</p>
+                    <p class="function-description">Collect sweat sample, measure conductivity and calculate salt level in terms of voltage.</p>
                     <div class="highlight">
                         <p><span class="function-name">    sweat_sample</span> = <span class="function-name">collect_sweat_sample()</span></p>
-                        <p><span class="function-name">    salt_level</span> = <span class="function-name">calculate_salt_level(sweat_sample)</span></p>
-                        <p><span class="function-name">    conductivity</span> = <span class="function-name">measure_conductivity(salt_level)</span></p>
+                       <p><span class="function-name">    conductivity</span> = <span class="function-name">measure_conductivity(sweat_sample)</span></p>
                     </div>
                     
                     <p class="function-description">Process conductivity and handle errors.</p>
@@ -160,11 +159,9 @@
         
         <p class="note"><b>collect_sweat_sample()</b> represents the step where the sweat sample is collected for analysis.</p>
 
-        <p class="note"><b>calculate_salt_level(sweat_sample)</b> calculates the salt level from the sweat sample. This step is crucial as the salt level is directly related to the glucose level.</p>
+        <p class="note"><b>measure_conductivity(sweat_sample)</b> measures the conductivity. The conductivity of the sweat is the measure of its ability to conduct the electricity. The electrical conductivity of a solution of an electrolyte is measured by determining the resistance of the solution between two plate electrodes separated by a fixed distance. The conductivity is then converted to a voltage, which is used to interpolate the glucose level.</p>
 
-        <p class="note"><b>measure_conductivity(salt_level)</b> measures the conductivity based on the salt level. The conductivity is then converted to a voltage, which is used to interpolate the glucose level.</p>
-
-        <p class="note"><b>convert_conductivity_to_voltage(conductivity)</b> converts into voltage.</p>
+        <p class="note"><b>convert_conductivity_to_voltage(conductivity)</b> converts into voltage. Arduino UNO gets the analog signal from the electrode and converts into digital form. BME688 and BME280 sensors measures temperature, humidity, air pressure, and gas resistance. Gas resistance can indirectly indicate air quality or detect certain gases in the environment. These sensors are attached with Arduino. The temperature and humidity data are used to compensate for environmental factors affecting electrical conductivity measurements.  Gas resistance data from the BME688 is used to detect changes in air quality, which might affect conductivity. Pressure data is used to account for altitude variations.</p>
 
         <p class="note"><b>interpolate_glucose_level(voltage)</b> represents the formula for calculating glucose levels.</p>
 
@@ -176,7 +173,7 @@
 
         <p class="note"><b>validate_user_data(user_data)</b> ensures that the collected user data is valid and within expected ranges or formats.</p>
 
-        <p class="note"><b>assess_pre_diabetes_risk(glucose_level, user_data)</b> is the function where the glucose level along with user data is processed to assess the risk of pre-diabetes. This could involve a predictive model or an algorithm based on medical guidelines.</p>
+        <p class="note"><b>assess_pre_diabetes_risk(glucose_level, user_data)</b> is the function where the glucose level along with user data is processed to assess the risk of pre-diabetes. This could involve a predictive model or an algorithm based on medical guidelines. (Currently the value is calculated by using this given formula: bmi*0.25 + race*0.25 + result*0.25 + age*0.25 which is then converted into percentage)</p>
 
         <p class="note"><b>display_risk_assessment(pre_diabetes_risk)</b> shows the outcome of the risk assessment to the user through the app's interface.</p>
 
